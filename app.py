@@ -1,13 +1,11 @@
 from flask import Flask
-app = Flask(__name__)
-
+app = Flask(_name_)
 
 @app.route('/')
 def hello():
     return "Hello from Flask!"
 
-  
-if __name__ == '__main__':
+if _name_ == '_main_':
     app.run(host='0.0.0.0', port=3000)
 
 
@@ -15,7 +13,7 @@ if __name__ == '__main__':
 
 # import os
 # from flask import Flask, request
-# app = Flask(__name__)
+# app = Flask(_name_)
 
 # @app.route('/')
 # def hello():
@@ -28,5 +26,5 @@ if __name__ == '__main__':
 #     os.system(f"ping -c 1 {host}")  # Command injection possible
 #     return f"Pinging {host}"
 
-# if __name__ == '__main__':
-#     app.run(host='0.0.0.0', port=3000)
+# if _name_ == '_main_':
+#     app.run(host='0.0.0.0', port=3000)
