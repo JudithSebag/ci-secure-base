@@ -52,8 +52,8 @@ jobs:
       - name: Stop and remove container
         if: always()
         run: |
-          docker stop flask_app
-          docker rm flask_app
+          docker stop flask_app || true 
+          docker rm flask_app || true 
 
-          
+
 
