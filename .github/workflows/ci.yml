@@ -54,3 +54,5 @@ jobs:
         run: |
           docker stop flask_app
           docker rm flask_app
+
+          
